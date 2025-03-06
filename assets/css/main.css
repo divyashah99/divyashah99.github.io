@@ -4687,3 +4687,24 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* Container to hold Projects and Work Experience side by side */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Set width for both sections */
+#projects, #work-experience {
+    width: 48%;
+}
+
+/* Make it responsive */
+@media screen and (max-width: 768px) {
+    #projects, #work-experience {
+        width: 100%; /* Stack on small screens */
+    }
+}
